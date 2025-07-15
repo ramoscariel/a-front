@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { AuthContext } from "react-oauth2-code-pkce"
 
-const API_BASE_URL = "https://localhost:8081/api";
+const API_BASE_URL = "http://localhost:8081/api";
 
 function App() {
   const { token, tokenData, logIn, logOut, isAuthenticated } = useContext(AuthContext);
